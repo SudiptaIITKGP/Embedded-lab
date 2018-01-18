@@ -6,8 +6,7 @@ int flag  = 0;
 int val = 0;
 
 void setup() {
-  // put your setup code here, to run once:
-//pinMode(ledPinOrange, OUTPUT);
+  // setting up pins configuration 
 pinMode(ledPinRed, OUTPUT);
 pinMode(Button, INPUT);
 }
@@ -15,7 +14,7 @@ pinMode(Button, INPUT);
 void loop() {
   // put your main code here, to run repeatedly:
 
-  // reading the statuts of the button
+// reading the statuts of the button
 int val = digitalRead(Button);
 
 // flag of the led is updated when we press the keypad...0 or 1
@@ -24,6 +23,7 @@ if(val == HIGH)
 flag = 1 - flag;
 }
 
+// If flag is 1 bulb is on until flag turned to 0
 if(flag == 1)
 {
   digitalWrite(ledPinRed, HIGH);
