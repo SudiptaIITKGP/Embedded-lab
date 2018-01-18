@@ -17,14 +17,7 @@ void loop() {
 // digitalWrite(ledPinOrange, HIGH);
 int val = digitalRead(Button);
 
-//if(val == HIGH)
-//{
-//  digitalWrite(ledPinRed, HIGH);
-//}
-//else
-//{
-//  digitalWrite(ledPinRed, LOW);
-//}
+//
 if(val == HIGH)
 {
 flag = 1 - flag;
