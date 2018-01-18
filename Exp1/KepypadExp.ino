@@ -1,5 +1,4 @@
-// int ledPinOrange = 7;
-
+// Initialising the pins and variables
 int ledPinRed = 2;
 int Button = 7;
 int flag  = 0;
@@ -12,7 +11,7 @@ pinMode(Button, INPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Main code is here
 
 // reading the statuts of the button
 int val = digitalRead(Button);
