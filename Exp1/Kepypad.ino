@@ -14,10 +14,11 @@ pinMode(Button, INPUT);
 
 void loop() {
   // put your main code here, to run repeatedly:
-// digitalWrite(ledPinOrange, HIGH);
+
+  // reading the statuts of the button
 int val = digitalRead(Button);
 
-//
+// flag of the led is updated when we press the keypad...0 or 1
 if(val == HIGH)
 {
 flag = 1 - flag;
